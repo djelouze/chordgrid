@@ -1,0 +1,12 @@
+chordgrid is a package that provides Latex macro
+for chord grid editing. It calls tikz/pgf macros.
+
+Use: simply put the chordgrid.sty in your main document
+folder or Latex packages folder and add the following
+line in your document preamble:
+\usepackage{chordgrid}
+
+Jerome Velut
+http://github.com/jeromevelut
+December 2010
+

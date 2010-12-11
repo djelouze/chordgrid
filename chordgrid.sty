@@ -1,0 +1,23 @@
+% chordgrid.sty
+% provides some functions for chord grid edition
+\usepackage{tikz}
+
+\newcommand{\s}{$\sharp$}
+
+\newcommand{\cgbar}[1]{%
+\begin{tikzpicture}%
+\sffamily\bfseries%
+\draw (1,0) rectangle (3,2);%
+\draw (2,1) node {#1};%
+\end{tikzpicture}%
+}
+
+\newcommand{\cghalfbar}[2]{%
+\begin{tikzpicture}%
+\sffamily\bfseries%
+\draw (1,0) rectangle (3,2);%
+\draw (1.5,1.5) node {\small #1};%
+\draw (1,0) -- (3,2);%
+\draw (2.5,0.5) node {\small #2};%
+\end{tikzpicture}%
+}
