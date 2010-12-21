@@ -3,21 +3,22 @@
 \usepackage{tikz}
 
 \newcommand{\s}{$\sharp$}
+\renewcommand{\b}{$\flat$}
 
 \newcommand{\cgbar}[1]{%
 \begin{tikzpicture}%
 \sffamily\bfseries%
-\draw (1,0) rectangle (3,2);%
-\draw (2,1) node {#1};%
+\draw (0,0) rectangle (1,1);%
+\draw (0.5,0.5) node {#1};%
 \end{tikzpicture}%
 }
 
 \newcommand{\cghalfbar}[2]{%
 \begin{tikzpicture}%
 \sffamily\bfseries%
-\draw (1,0) rectangle (3,2);%
-\draw (1.5,1.5) node {\small #1};%
-\draw (1,0) -- (3,2);%
-\draw (2.5,0.5) node {\small #2};%
+\draw (0,0) rectangle (1,1);%
+\draw (.35,.75) node {\small #1};%
+\draw (0,0) -- (1,1);%
+\draw (.66,0.25) node {\small #2};%
 \end{tikzpicture}%
 }
